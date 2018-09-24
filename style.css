@@ -1,6 +1,16 @@
 body {
+    
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("husky.jpg");
+    background-position:center;
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+}
+
+header {
+    
+   
 }
 nav {
     height: 50px;
@@ -21,21 +31,28 @@ nav li {
 h1{
     font-size:3em;
 }
+
+p{
+    color:rgb(202, 22, 46);
+}
+
+
+
 .question input[type='radio']{
 margin:10px;
-
-
 }
 
 #submit-button{
     margin-top:20px;
-    
-
 }
 
 
 .hidden {
     visibility: hidden;
+}
+
+form{
+    padding:20px;
 }
 
 #footer {
@@ -44,6 +61,7 @@ margin:10px;
     padding:10px;
     padding-top:50px;
     margin-top:20px;
+    
 }
 
 #AKC{
