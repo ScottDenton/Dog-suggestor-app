@@ -92,8 +92,12 @@ return points;
 var finalLink = document.getElementById('final-link');
 
 function restart(){
+   document.getElementById("result").classList.add('hidden');
+    resetBtns();
+}
+
+function resetBtns(){
     total = 0;
-    document.getElementById("result").classList.add('hidden');
 //question 1
     var radioList = document.getElementsByName("q1");
     for (var i = 0; i < radioList.length; i++) {
@@ -123,6 +127,7 @@ function restart(){
         }
     }
 }
+
 
 var total = 0;
 function result(){
@@ -229,13 +234,9 @@ function result(){
         finalLink.href ="https://www.akc.org/dog-breeds/miniature-pinscher/";
         finalLink.textContent = "Miniature Pinscher "
      }
-    else {
-         document.getElementById('result').innerHTML = '<h3> "Unfortunately I couldnt find any doggies that match your criteria</h3><p>It could be because you combined some conflicting characteristics (or forgot to answer one of the questions ).<br> For example its very hard to find a small, lazy dog with long hair that likes spending time outside. <br> Here is a link to <a href = "https://www.akc.org/"> American Kennel Club\'s site</a> to help you out if you would like to do some further research. </p>'
-        
-    }
-    console.log(total);
-    console.log(saintBernardPoints);
-
+    
+     resetBtns();
+    
     
     
 }

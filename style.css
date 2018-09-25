@@ -8,10 +8,7 @@ body {
     background-attachment: fixed;
 }
 
-header {
-    
-   
-}
+
 nav {
     height: 50px;
     background-color:rgba(173, 36, 36, 0.63);
@@ -25,17 +22,29 @@ nav li {
     margin: 20px;
     
 }
+header{
+    padding:10px;
+    }
 
+#tag-line{
+    font-style: italic;
+}
 
 
 h1{
     font-size:3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 p{
-    color:rgb(202, 22, 46);
+    color:white;
+    text-shadow: 0.5px 0.5px black;
 }
 
+.footer{
+    color:black;
+}
 
 
 .question input[type='radio']{
@@ -46,6 +55,14 @@ margin:10px;
     margin-top:20px;
 }
 
+
+#start-button{
+    width:80px;
+    }
+
+#start-button:hover{
+    text-transform: uppercase;
+}    
 
 .hidden {
     visibility: hidden;
@@ -73,9 +90,15 @@ form{
     padding:50px;
 }
 
-.btn:hover {
+.btn{
     background-color:rgba(173, 36, 36, 0.63);
+    color:white;
+}
+
+.btn:hover {
+    background-color:#61efff;
     transform: scale(1.1);
+    
 }
 .btn:active{
     transform: scale(1.2);
@@ -86,7 +109,7 @@ li a{
     color: black;
 }
 li a:hover {
-    color:rgb(219, 223, 0);
+   color:#00b56d;
 }
 
 a {
